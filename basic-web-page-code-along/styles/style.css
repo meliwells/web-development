@@ -9,3 +9,8 @@
         background-color: lavender;
         cursor: pointer;
        }
+
+       .important {
+        color: red;
+        font-size: 30px;
+       }
