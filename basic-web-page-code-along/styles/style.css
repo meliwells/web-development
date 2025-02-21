@@ -1,0 +1,11 @@
+
+           
+       blockquote {
+        background-color: khaki;
+        font-family: monospace;
+       }
+
+       blockquote:hover {
+        background-color: lavender;
+        cursor: pointer;
+       }
