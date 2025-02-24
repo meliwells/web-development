@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Form</title>
+</head>
+<body>
+    <h1>Contact Us</h1>
+
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <p>Prefered Contact Method:</p>
+        <label>
+            <input type="radio" name="contact_method" value="email" checked>
+            Email
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="contact_method" value="phone">
+            Phone
+        </label>
+        <br><br>
+        <label>
+            <input type="checkbox" name="newsletter" value="subscribe">
+            Subscribe to newsletter
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="terms" value="agree" required>
+            I agree to the terms and conditions
+        </label>
+        <br><br>
+        <label>
+            <input type="submit" name="terms" value="Submit" required>
+            I agree to the terms and conditions
+        </label>
+    </form>
+</body>
+</html>
