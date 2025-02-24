@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table {
+            border: 1px solid;
+            width: 100%;
+        }
+
+        td {
+            border: 1px dashed;
+            padding: 2px;
+            text-align:center;
+        }
+
+        th {
+            border: 1px solid;
+            width: 20%;
+            text-align:center;
+        }
+        #schedule td, th {
+            width: 12%;
+        }
+        thead {
+            background-color: rgb(34, 153, 158);
+        }
+        #revenue tbody {
+            background-color: lightgrey;
+        }
+        tfoot {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Table Practice</h1>
+    <table>
+        <tr>
+            <td>Row 1, Column 1</td>
+            <td>Row 1, Column 2</td>
+            <td>Row 1, Column 3</td>
+        </tr>
+        <tr>
+            <td>Row 2, Column 1</td>
+            <td>Row 2, Column 2</td>
+            <td>Row 2, Column 3</td>
+        </tr>
+        <tr>
+            <td>Row 3, Column 1</td>
+            <td>Row 3, Column 2</td>
+            <td>Row 3, Column 3</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <h1>Using Table Headers and Columns Span</h1>
+    <table id="revenue">
+        <caption>2025 revenue Projections</caption>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Q1</th>
+                <th>Q2</th>
+                <th>Q3</th>
+                <th>Q4</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>Electronics</th>
+            <td>$35M</td>
+            <td>$33M</td>
+            <td>$37M</td>
+            <td>$40M</td>
+        </tr>
+        <tr>
+            <th>Clothing</th>
+            <td>$20M</td>
+            <td>$23M</td>
+            <td>$18M</td>
+            <td>$27M</td>
+        </tr>
+        <tr>
+            <th>Furniture</th>
+            <td>$15M</td>
+            <td>$17M</td>
+            <td>$13M</td>
+            <td>$15M</td>
+        </tr>
+        </tbody>
+        <tr>
+            <tfoot>
+            <th colspan="4">Total Revenue</th>
+            <td>$293M</td>
+            </tfoot>
+        </tr>
+    </table>
+<br><br>
+    <h1>Using Row Spaning</h1>
+    <table>
+        <tr>
+            <th>Element</th>
+            <th>Spell</th>
+        </tr>
+        <tr style="background-color: #f36767">
+            <th rowspan="2">Fire</th>
+            <td>Burning Palm</td>
+        </tr>
+        <tr style="background-color: #f36767">
+            <td>Fireball</td>
+        </tr>
+        <tr style="background-color: lightblue">
+            <th rowspan="2" Water></throwspan></th>
+            <td>Healing Rain</td>
+        </tr>
+        <tr style="background-color: lightblue">
+            <td>Frost Orb</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <h1>Styling with Column Groups</h1>
+    <table id="schedule">
+        <caption>Class Schedule</caption>
+        <colgroup>
+            <col>
+            <col style="background-color: red">
+            <col span="4">
+            <col style="background-color: green" span="2">
+        </colgroup>
+        <tr>
+            <th></th>
+            <th>M</th>
+            <th>T</th>
+            <th>W</th>
+            <th>T</th>
+            <th>F</th>
+            <th>S</th>
+            <th>S</th>
+        </tr>
+        <tr>
+            <th>Week 1</th>
+            <td>Assessment</td>
+            <td>Learning</td>
+            <td>Learning</td>
+            <td>Learning</td>
+            <td>Learning</td>
+            <td></td>
+            <td></td>
+            </td>
+        </tr>
+        <tr>
+            <th>Week 2</th>
+            <td>Assessment</td>
+            <td>Learning</td>
+            <td>Learning</td>
+            <td>Learning</td>
+            <td>Learning</td>
+            <td></td>
+            <td></td>
+            </td>
+        </tr>
+        <tr>
+            <th>Week 3</th>
+            <td>Assessment</td>
+            <td>Learning</td>
+            <td>Learning</td>
+            <td>Learning</td>
+            <td>Learning</td>
+            <td></td>
+            <td></td>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
