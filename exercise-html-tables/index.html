@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercide Tables</title>
+    <style>
+        table {
+            border: 1px solid;
+            width: 100%;
+        }
+
+        td {
+            border: 1px dashed;
+            padding: 2px;
+            text-align:center;
+        }
+        </style>
+</head>
+<body>
+    <h1>Table Practice</h1>
+    <table>
+        <caption>2025 revenue Projections</caption>
+        <tr>
+            <th>Category</th>
+            <th>Product Name</th>
+            <th>Price</th>
+            <th>Stock Status</th>
+        </tr>
+        <tr>
+            <td>Food</td>
+            <td>Watermelon</td>
+            <td>$4.99</td>
+            <td>In Stock</td>   
+        </tr>
+        <tr>
+            <td>Beauty</td>
+            <td>Body Wash</td>
+            <td>$2.89</td>
+            <td>In Stock</td>
+        </tr>
+        <tr>
+            <tr style="background-color: lightgrey">
+                <th rowspan="2">Electronics</th>
+                <td>Vinyl</td>
+                <td>$24.99</td>
+                <td>In Stock</td>
+            </tr>
+            <tr style="background-color: lightgrey">
+                <td>Television</td>
+                <td>$425.99</td>
+                <td>In Stock</td>
+            </tr>
+            <tr>
+                <tr style="background-color: lightblue">
+                    <th rowspan="2">School/ Office Supplies</th>
+                    <td>Pencils</td>
+                    <td>$3.99</td>
+                    <td>In Stock</td>
+                </tr>
+                <tr style="background-color: lightblue">
+                    <td>Paper</td>
+                    <td>$1.99</td>
+                    <td>In Stock</td>
+                </tr>
+        <tfoot>
+            <th colspan="4">Total Products</th>
+            </tfoot>
+    </table>
+</body>
+</html>
