@@ -2,16 +2,36 @@
 html {    /*can also use "*" instead of html */
     font-family: Arial, Helvetica, sans-serif;
 }
-
+/*
 section {
     font-family: 'Trebuchet MS', Arial, sans-serif;
-    font-weight: 900; /* or can do bold, 600 starts bolding */
+    font-weight: 900; (or can type bold, 600 starts bolding)
     font-style: italic;
     font-size: 18px;
     text-transform: capitalize;
     text-decoration: underline;
 }
+*/
 
 header h1 {
-    font-family: "Honk";
+    font-family: "Honk", serif;
+}
+
+.styled-text {
+    font-style: italic;
+    font-size: 18px;
+}
+
+.layout-text {
+    text-align: justify;
+    line-height: 1;
+}
+.highlight {
+    background-color: yellow;
+}
+
+.bonus {
+    word-spacing: 20px;
+    letter-spacing: 3px;
+    text-indent: 5%; 
 }
