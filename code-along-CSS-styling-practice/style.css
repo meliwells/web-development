@@ -1,4 +1,6 @@
 
+/* Fonts and text */
+
 html {    /*can also use "*" instead of html */
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -34,4 +36,52 @@ header h1 {
     word-spacing: 20px;
     letter-spacing: 3px;
     text-indent: 5%; 
+}
+
+/* Lists */
+
+ul.styled-list {
+    list-style-position: inside;
+    list-style-type: square;
+    line-height: 2;
+    list-style-image: url("../images/icon.png"); /*download icon */
+
+}
+
+ol.styled-list {
+    list-style-type: lower-roman;
+    line-height: 2;
+}
+
+ul.styled {
+    list-style-type: ""/*use an icon or image here*/;
+}
+
+/* Images and Links */
+
+.custom-link {
+    color: green;
+    text-decoration: none;
+}
+
+.custom-link:active {
+    color: red;
+}
+
+.custom-link:hover {
+    text-decoration: underline;
+}
+
+.custom-link:visited {
+    color: blue;
+}
+
+.image-frame {
+    width: 300px;
+    border: 3px solid black;
+    padding: 5px;
+}
+
+.image-frame img {
+    width: 100%;
 }
