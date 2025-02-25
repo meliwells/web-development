@@ -6,20 +6,20 @@
 
 .block {
     background-color: lightskyblue;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid black;
 }
 
 .inline {
     background-color: rgb(255, 205, 80);
     padding: 35px;
-    display: block;
+    display: inline;
 }
 
 .inlineblock {
     background-color: lightpink;
     padding: 35px;
-    display: inline-block;
+    display: block;
 }
 
 .box {
@@ -96,3 +96,15 @@
     border: 4px solid black;
 }
     
+.navbar {
+    display: flex;
+    list-style: none;
+    padding: 10;
+}
+
+.navbar li {
+    margin-right: 1em;
+}
+.navbar li a {
+    text-decoration: none;
+}    
