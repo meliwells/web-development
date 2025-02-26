@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web</title>
+    <style>
+        body {
+            background-color: #526E80;
+        }
+
+        .flexbox-container {
+            display: flex;
+            justify-content: space-evenly; /*left, right, and others */
+            /*flex-wrap: wrap; /*jumps to a new line once shrunk down and doesn't fit on same line*/
+            align-items: center; /* align-items: stretch; alignment of how they are arranged space they fill up top to bottom, end rests on the bottom, start comes down from top*/
+            background-color: lightblue;
+            /*flex-direction: row-reverse /*changes the direction of the boxes can do column to get the boxes vertical*/
+        }
+
+        .flexbox-item {
+            background-color: #EEEEEEFF;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            font-size: 30px;
+            width: 100px;
+        }
+
+        .flexbox-1 {
+            min-height: 100px;
+            flex-shrink: 0; /* 1 doesn't shrink when resized, but the others do */
+            /* order: 3; can re-arrange the boxes using this. It places box 1 where 3 is and box 3 where 2 is. box 2 is placed where 1 is. */
+        }
+
+        .flexbox-2 {
+            min-height: 200px;
+            /*flex-grow: 1;  2 takes up as much space as possible, can also add to other flexboxes */
+        }
+
+        .flexbox-3 {
+            min-height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <!---Flexbox-->
+    <div class="flexbox-container">
+        <div class="flexbox-item flexbox-1">1</div>
+        <div class="flexbox-item flexbox-2">2</div>
+        <div class="flexbox-item flexbox-3">3</div>
+    </div>
+</body>
+</html>
