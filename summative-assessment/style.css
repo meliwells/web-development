@@ -13,6 +13,11 @@ header {
     background-color: rgb(252, 214, 220);
     color: white;
 }
+header h1 {
+    font-size: 30px;
+    color: white;
+    text-shadow: 3px 3px 5px black;
+}
 
 .logo {
     font-size: 24px;
@@ -98,66 +103,81 @@ nav ul li a:hover {
     margin: 0;
 }
 
-.about h1 {
+.about h1, .contact h1 {
     font-size: 20px;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 20px;
     font-weight: bold;
     margin: 0;
 }
 
-.about p {
+.about p, .contact p {
     font-size: 15px;
     margin: 10px 0;
     padding: 20px;
+    text-align: center;
 }
 
 .about-images {
     display: flex;
-    flex-wrap: wrap;
-    font-size: 30px;
-    text-align: center;
+    justify-content: space-evenly; 
+    flex-wrap: wrap; 
+    align-items: center; 
 }
 
-.muffins, .breads {
-    padding: 10px;
-    flex: 50%;
+.muffins {
+    min-height: 100px;
 }
 
-.contact h1 {
-    font-size: 20px;
-    text-align: center;
-    padding-top: 10px;
-    font-weight: bold;
-    margin: 0;
+.breads {
+    min-height: 100px;
 }
 
-.contact p {
-    font-size: 15px;
-    margin: 10px 0;
-    padding: 20px;
+.form {
+    background-image: url("images/bread-side.jpg");
+    min-height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
-
+  
+.container {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 275px;
+    padding: 16px;
+    background-color: white;
+}
+  
 input, textarea {
     width: 100%;
-    padding: 12px 18px;
-    margin: 15px;
-    box-sizing: border-box;
-    border: 2px solid pink;
-    border-radius: 4px;
+    max-width: 250px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
 }
-
-input:hover, textarea:hover {
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.94);
+  
+input:focus, textarea:focus {
+    background-color: rgb(252, 214, 220);
+    max-width: 250px;
+    outline: none;
 }
-
-.button {
-    padding: 20px;
-}
-
-#fieldset {
+  
+.btn {
+    background-color: rgb(69, 67, 68);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
     width: 100%;
-    margin: 20px;
+    opacity: 0.9;
+}
+  
+.btn:hover {
+    opacity: 1;
 }
 
 footer {

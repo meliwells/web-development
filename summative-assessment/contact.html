@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-        <div class="logo"><img src="images/logo.jpg" alt="logo"></div>
+        <h1>Heavenly Bakes</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -21,35 +21,27 @@
     <section class="contact">
         <div class="contact">
             <h1>Contact Us</h1>
-            <p>If you have any questions or comments, please contact us. You can fill out the form, call us, or stop by.</p>
+            <p>If you have any questions or comments, please contact us. </p>
         </div>
     </section> 
 
-    <img src="images/bread-side.jpg" style="max-width:100%;height:auto;" alt="bread">
 
-
-    <form action="/submit-form" method="post"> 
-        <fieldset id="fieldset">
-        <legend>Contact Information</legend>    
-            <div> 
-                <label for="name">Name:</label> 
-                <input type="text" id="name" name="name" required> 
-            </div> 
-            <br>
-            <div> 
-                <label for="email">Email:</label> 
-                <input type="text" id="email" name="email" required> 
-            </div> 
-        
-            <div> 
-                <label for="message">Message:</label> 
-                <textarea id="message" name="message" required></textarea>  
-            </div>
-            </fieldset>
-            <div class="button">
-                <button type="submit" required>Send Message</button> 
-            </div>
-    </form>
+    <div class="form">
+        <form action="/submit_form" method=post class="container"> 
+          
+           <label for="name">Name:</label> 
+           <input type="text" id="name" name="name" required>
+      
+          <label for="email">Email:</label>
+          <input type="text" name="email" required>
+      
+          <label for="message">Message:</label> 
+          <textarea id="message" name="message" required></textarea>
+          
+      
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div> 
 
 
     <footer>
