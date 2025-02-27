@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing:border-box;
 }
 
 header {
@@ -97,6 +98,68 @@ nav ul li a:hover {
     margin: 0;
 }
 
+.about h1 {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.about p {
+    font-size: 15px;
+    margin: 10px 0;
+    padding: 20px;
+}
+
+.about-images {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+}
+
+.muffins, .breads {
+    padding: 10px;
+    flex: 50%;
+}
+
+.contact h1 {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.contact p {
+    font-size: 15px;
+    margin: 10px 0;
+    padding: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px 18px;
+    margin: 15px;
+    box-sizing: border-box;
+    border: 2px solid pink;
+    border-radius: 4px;
+}
+
+input:hover, textarea:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.94);
+}
+
+.button {
+    padding: 20px;
+}
+
+#fieldset {
+    width: 100%;
+    margin: 20px;
+}
+
 footer {
     font-size: 15px;
     display: flex;
@@ -126,4 +189,10 @@ footer .social-media li a, footer .site-map li a {
 
 footer .social-media li a:hover, footer .site-map li a:hover {
     color: black;
+}
+
+@media (max-width: 800px) {
+    .muffins, .breads {
+      flex: 100%;
+    }
 }
