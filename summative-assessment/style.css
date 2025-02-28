@@ -1,0 +1,268 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(252, 214, 220);
+    color: white;
+}
+
+header h1 {
+    font-size: 45px;
+    color: white;
+    text-shadow: 3px 3px 2px black;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: Black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #b5b2b2;
+    border-radius: 3px;
+}
+
+.home img {
+    width: 100%; 
+}
+
+.home h1 {
+    font-size: 40px;
+    text-align: center;
+    padding: 2px;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+
+.home h2 {
+    font-size: 30px;
+    text-align: center;
+    padding: 2px;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 15px;
+}
+
+.home p {
+    font-size: 18px;
+    padding-left: 10px;
+    margin: 0px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.home-info {
+    display: grid;
+    padding: 50px 20px;
+    background-color: #e6e3e3;  
+    text-align: center;
+}
+
+.our-story {
+    background-color: rgba(252, 214, 220, 0.451);
+    padding: 20px;
+    border-radius: 5px;
+    border: solid 2px black;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.home-info h2 {
+    font-size: 30px;
+    text-align: center;
+    padding: 2px;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.home-info p {
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.our-creations ul li {
+    list-style: none;
+}
+
+.reviews {
+    font-size: 15px;
+    text-align: center;
+    padding: 2px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.about h2, .contact h2 {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.about p, .contact p {
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.about-images {
+    display: flex;
+    justify-content: space-evenly; 
+    flex-wrap: wrap; 
+    align-items: center; 
+}
+
+.muffins, .breads {
+    min-height: 100px;
+    margin-bottom: 20px;
+    max-width: 400px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    align-items: center;
+    margin: 10px 0;
+    padding: 20px; 
+}
+
+.form {
+    background-image: url("images/bread-side.jpg");
+    min-height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+  
+.container {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    margin-right: 100px;
+    max-width: 275px;
+    padding: 16px;
+    background-color: white;
+}
+  
+input, textarea {
+    width: 100%;
+    max-width: 250px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+  
+input:focus, textarea:focus {
+    background-color: rgb(252, 214, 220);
+    max-width: 250px;
+    outline: none;
+}
+  
+.btn {
+    background-color: rgb(69, 67, 68);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+  
+.btn:hover {
+    opacity: 1;
+}
+
+footer {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    background-color: #b5b2b2;
+    color: white;
+}
+
+footer .social-media, footer .site-map {
+    font-size: 12px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 5px 0;
+}
+
+footer .social-media li, footer .site-map li {
+    margin: 0 10px;
+}
+
+footer .social-media li a, footer .site-map li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .social-media li a:hover, footer .site-map li a:hover {
+    color: black;
+}
+
+@media (max-width: 800px) {
+    .muffins, .breads {
+      flex: 100%;
+    }
+}
+
+@Media (max-width: 480px) {
+    header {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .home h1 {
+        font-size: 25px;
+    }
+    
+    .home p {
+        font-size: 10px;
+    }
+
+    .home-info p {
+        font-size: 9px;
+    }
+
+    .home-info h2 {
+        font-size: 12px;
+    }
+}
