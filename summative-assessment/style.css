@@ -13,10 +13,11 @@ header {
     background-color: rgb(252, 214, 220);
     color: white;
 }
+
 header h1 {
-    font-size: 30px;
+    font-size: 45px;
     color: white;
-    text-shadow: 3px 3px 5px black;
+    text-shadow: 3px 3px 2px black;
 }
 
 .logo {
@@ -47,8 +48,9 @@ nav ul li a:hover {
     background-color: #b5b2b2;
     border-radius: 3px;
 }
+
 .home img {
-    width: 100%;
+    width: 100%; 
 }
 
 .home h1 {
@@ -60,16 +62,28 @@ nav ul li a:hover {
     margin-bottom: 0px;
 }
 
+.home h2 {
+    font-size: 30px;
+    text-align: center;
+    padding: 2px;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 15px;
+}
+
 .home p {
     font-size: 18px;
     padding-left: 10px;
+    margin: 0px;
     margin-bottom: 30px;
+    text-align: center;
 }
 
-.home-info{
+.home-info {
     display: grid;
     padding: 50px 20px;
     background-color: #e6e3e3;  
+    text-align: center;
 }
 
 .our-story {
@@ -82,29 +96,34 @@ nav ul li a:hover {
 }
 
 .home-info h2 {
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
     padding: 2px;
     font-weight: bold;
     margin: 0;
+    margin-top: 10px;
 }
 
 .home-info p {
-    font-size: 15px;
+    font-size: 18px;
     margin: 10px 0;
     padding: 10px;
 }
 
+.our-creations ul li {
+    list-style: none;
+}
+
 .reviews {
-    font-size: 10px;
+    font-size: 15px;
     text-align: center;
     padding: 2px;
     font-weight: bold;
     margin: 0;
 }
 
-.about h1, .contact h1 {
-    font-size: 20px;
+.about h2, .contact h2 {
+    font-size: 30px;
     text-align: center;
     padding-top: 20px;
     font-weight: bold;
@@ -112,7 +131,7 @@ nav ul li a:hover {
 }
 
 .about p, .contact p {
-    font-size: 15px;
+    font-size: 18px;
     margin: 10px 0;
     padding: 20px;
     text-align: center;
@@ -125,12 +144,19 @@ nav ul li a:hover {
     align-items: center; 
 }
 
-.muffins {
+.muffins, .breads {
     min-height: 100px;
+    margin-bottom: 20px;
+    max-width: 400px;
 }
 
-.breads {
-    min-height: 100px;
+.icons {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    align-items: center;
+    margin: 10px 0;
+    padding: 20px; 
 }
 
 .form {
@@ -146,6 +172,7 @@ nav ul li a:hover {
     position: absolute;
     right: 0;
     margin: 20px;
+    margin-right: 100px;
     max-width: 275px;
     padding: 16px;
     background-color: white;
@@ -214,5 +241,28 @@ footer .social-media li a:hover, footer .site-map li a:hover {
 @media (max-width: 800px) {
     .muffins, .breads {
       flex: 100%;
+    }
+}
+
+@Media (max-width: 480px) {
+    header {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .home h1 {
+        font-size: 25px;
+    }
+    
+    .home p {
+        font-size: 10px;
+    }
+
+    .home-info p {
+        font-size: 9px;
+    }
+
+    .home-info h2 {
+        font-size: 12px;
     }
 }

@@ -1,61 +1,64 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Summative Assessment</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-        <h1>Heavenly Bakes</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Summative Assessment</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Heavenly Bakes</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="contact">
+            <div class="contact">
+                <h2>Contact Us</h2><br><br>
+                <div class="icons">
+                    <div class="address"><img src="images/image3.png" alt="address"></div>
+                    <div class="phone"><img src="images/image1.png" alt="phone"></div>
+                    <div class="email"><img src="images/image2.png" alt="email"></div>
+                </div>
+                <p>If you have any questions or comments, please fill out the form. </p>
+            </div>
+        </section> 
+
+
+        <div class="form">
+            <form action="/submit_form" method=post class="container"> 
+          
+                <label for="name">Name:</label> 
+                <input type="text" id="name" name="name" required>
+      
+                <label for="email">Email:</label>
+                <input type="text" id=email name="email" required>
+      
+                <label for="message">Message:</label> 
+                <textarea id="message" name="message" required></textarea>
+          
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div> 
+
+        <footer>
+            <p>&copy; 2025 Heavenly Bakes. All rights reserved.</p>
+            <ul class="social-media">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
             </ul>
-        </nav>
-    </header>
-
-    <section class="contact">
-        <div class="contact">
-            <h1>Contact Us</h1>
-            <p>If you have any questions or comments, please contact us. </p>
-        </div>
-    </section> 
-
-
-    <div class="form">
-        <form action="/submit_form" method=post class="container"> 
-          
-           <label for="name">Name:</label> 
-           <input type="text" id="name" name="name" required>
-      
-          <label for="email">Email:</label>
-          <input type="text" name="email" required>
-      
-          <label for="message">Message:</label> 
-          <textarea id="message" name="message" required></textarea>
-          
-      
-          <button type="submit" class="btn">Submit</button>
-        </form>
-      </div> 
-
-
-    <footer>
-        <p>&copy; 2025 Heavenly Bakes. All rights reserved.</p>
-        <ul class="social-media">
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Instagram</a></li>
-        </ul>
-        <ul class="site-map">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </footer>
+            <ul class="site-map">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </footer>
     </body>
 </html>
