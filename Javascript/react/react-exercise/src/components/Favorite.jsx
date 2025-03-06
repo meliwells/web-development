@@ -3,5 +3,5 @@ import '../App.css'
 
 export default function Favorite(props) {
 
-    return <li key={props.brand} > {props.brand}: {props.mostFavorite}</li>
+    return <li key={props.brand} > {props.brand}: {props.mostFavorite}: {props.location}</li>
 }

@@ -38,7 +38,7 @@ export default function Body() {
         <div>
             <ol>
                 {favorites.map((favorite) => (
-                    <Favorite brand={favorite.brand} mostFavorite={favorite.mostFavorite}/>
+                    <Favorite brand={favorite.brand} mostFavorite={favorite.mostFavorite} location={favorite.location}/>
                 ))}
             </ol>
         </div>

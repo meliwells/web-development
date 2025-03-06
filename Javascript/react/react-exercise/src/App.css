@@ -1,3 +1,4 @@
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -39,4 +40,31 @@
 
 .read-the-docs {
   color: #888;
+}
+
+body {
+  background-color: rgb(87, 86, 86);
+}
+
+.page-header {
+  background-color: rgb(159, 247, 238);
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.page-header h1 {
+  text-decoration-line: underline;
+}
+
+.page-header p {
+  font-size: 25px;
+}
+
+li {
+  position: relative;
+  list-style-type: none;
+  margin-right: 40px;
+  background-color: rgb(245, 192, 173);
+  font-size: 20px;
+  border-radius: 10px;
 }
