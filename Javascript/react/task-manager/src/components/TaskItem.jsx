@@ -12,7 +12,12 @@ export default function TaskItem({task, dispatch}) {
 
     return (
         <div className='task-item'>
+            <div className={'card-container'}>
             <div className={`priority-dot ${priorityClass[priority]}`}></div>
+            <div className={'creation-date'}>
+                <em>{id.substring(0, 10)}</em>
+            </div>
+            </div>
             <h3>{title}</h3>
             <p>{description}</p>
             <button onClick={() => dispatch({type: 'DELETE_TASK', payload: id})}>Delete</button>
