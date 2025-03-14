@@ -1,7 +1,11 @@
-import React, { useState } from 'react';
+import React, {useState, useContext} from 'react';
+import {postTask} from '../utilities/apiUtilities.js';
+import ThemeContext from '../context/ThemeContext.js';
 
 
 export default function TaskForm({dispatch}) {
+
+    const {theme, toggleTheme} = useContext(ThemeContext);
 
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
@@ -22,33 +26,41 @@ export default function TaskForm({dispatch}) {
     const handleSubmit = (e) => {
         e.preventDefault();
     
-        let priority = "";
+        let priority = 0;
         if (impact === "1" && effort === "1"){
-           priority = "3";
+           priority = 3;
         }
         if (impact === "2" && effort === "1"){
-            priority = "1";
+            priority = 1;
         }
         if (impact === "1" && effort === "2"){
-            priority = "4";
+            priority = 4;
         }
         if (impact === "2" && effort === "2"){
-            priority = "2";
+            priority = 2;
         }
     
+
         const taskData = {
-            id: new Date().toISOString(),
+            id: crypto.randomUUID(),
+            date: new Date().toISOString().slice(0, 19),
             title,
             description,
             priority
         }
-        dispatch({type: 'ADD_TASK', payload: taskData})
-        console.log(taskData);
-        clearForm();
+
+        postTask(taskData).then((data) => {
+            dispatch({type: 'ADD_TASK', payload: taskData});
+            clearForm();
+        });
     }
     
     return (
         <form className='task-form' onSubmit={handleSubmit}>
+            <div>
+                <p>Current Theme: {theme}</p>
+                <button onClick={toggleTheme}>Toggle Theme</button>
+            </div>
             <div>
                 <label>Title</label>
                 <input 
